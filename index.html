@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Unique Url - Merchantsons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c9ebce;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80vw;
+            padding: 5vw;
+            background: #dffae3;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 8vw;
+            height: 11vw;
+        }
+        .profile h1 {
+            font-size: 28px;
+            color: #333;
+            margin: 10px 0 0;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .section h2 {
+            background-color: #a1c1a6;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        .section div {
+            margin-bottom: 10px;
+        }
+        .section label {
+            display: block;
+            font-weight: bold;
+        }
+        .section p {
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            background: #fff;
+        }
+        button {
+            background-color: #7aa180;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8a9e8f;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        #profile-pic-preview {
+            display: block;
+            margin-top: 10px;
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <img class="logo" src="/logo.png" alt="logo" id="logo">
+            <div class="tophead" id="tophead">Editable Resume By Merchantsons</div>
+            <div class="roll" id="roll">Roll # : 00037391</div>                
+        </center>
+        <form id="resume-form">
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*">
+            <img id="profile-pic-preview">
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name">
+
+            <label for="middle-name">Middle Name:</label>
+            <input type="text" id="middle-name">
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address">
+
+            <label for="passport">Passport:</label>
+            <input type="text" id="passport">
+
+            <label for="driving-license">Driving License:</label>
+            <input type="text" id="driving-license">
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills"></textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience"></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education"></textarea>
+
+           
+            <!-- Buttons -->
+            <center>
+            <button type="button" id="edit-btn">Edit</button>
+            <button type="button" id="save-btn">Save</button>
+            <button type="button" id="download-btn">Download</button>
+            <button type="button" id="print-btn">Print</button>
+            <button type="button" id="open-tab-btn">Open in New Tab</button>
+            <button type="button" id="generate-url-btn">Generate Unique URL</button>
+            </center>
+
+            <!-- Display URL --><br><br>
+            <div>
+                <label for="unique-url">Unique URL:</label>
+                <input type="text" id="unique-url" readonly>
+            </div>
+        </form>
+    </div>
+    <script src="resume.js"></script>
+</body>
+</html>
